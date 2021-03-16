@@ -3,7 +3,7 @@
 [string]$PAT = "PAT" 
 [string]$DefaultOrg = "ORGNAME" ## this is used to call member entitlement api to get id
 [string]$MemberToUse = "email" ## member to use to pull all azure devops orgs has access to, as a memberId is required to call that api
-[string]$NamespaceId = "52d39943-cb85-4d7f-8fa8-c6baac873819" ## this is for namespace of project
+[string]$NamespaceId = "52d39943-cb85-4d7f-8fa8-c6baac873819" ## this is for namespace of project, only to be changed if wanting to set a different permission on a different namespace
 
 ## auth into az devops with personal access token
 echo $PAT | az devops login
